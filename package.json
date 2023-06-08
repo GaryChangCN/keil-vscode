@@ -2,7 +2,7 @@
   "name": "keil-vscode",
   "displayName": "Keil V",
   "description": "An assistant for Keil uVision 5",
-  "version": "0.0.2",
+  "version": "0.0.3-beta.0",
   "publisher": "jiyun-tech",
   "author": {
     "name": "www.jiyun.tech",
@@ -166,6 +166,5 @@
     "webpack-cli": "^4.8.0",
     "xml2js": "^0.4.23"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
