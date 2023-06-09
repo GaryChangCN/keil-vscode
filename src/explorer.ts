@@ -4,6 +4,7 @@ import { readdirSync, readFileSync, statSync, unwatchFile, watchFile, writeFileS
 import { join } from 'path';
 import * as node_path from 'path';
 import * as vscode from 'vscode';
+import * as fs from 'fs';
 import KeilProject from './project';
 import Target from './target/target';
 
@@ -134,6 +135,11 @@ export default class Explorer extends EventEmitter {
             this.channel.appendLine(`exec finish`);
             this.channel.appendLine(`stdout: ${stdout}`);
             this.channel.appendLine(`stderr: ${stderr}`);
+            fs.readFile(this.currentProject?.logPath as string, (err, data) => {
+              if (data) {
+                this.channel.appendLine(`${data}`)
+              }
+            })
             resolve();
           }
         });

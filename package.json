@@ -2,7 +2,7 @@
   "name": "keil-vscode",
   "displayName": "Keil V",
   "description": "An assistant for Keil uVision 5",
-  "version": "0.0.3-beta.0",
+  "version": "0.0.3-beta.1",
   "publisher": "jiyun-tech",
   "author": {
     "name": "www.jiyun.tech",
